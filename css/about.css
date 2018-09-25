@@ -3,11 +3,21 @@
   border-bottom: 2px solid #f0f0f0;
   padding-bottom: 50px;
 }
+.editor-content.p50 {
+  border-bottom: none!important;
+}
 .editor-content:last-child {
   border-bottom: none;
 }
 .editor-content.pt50 {
   padding-top: 50px;
+}
+.editor-content.pt50 p span:nth-child(1) {
+  width: 130px;
+  display: inline-block;
+}
+.editor-content.pt50 p span:nth-child(2) {
+  display: inline-block;
 }
 .editor-content h4 {
   font-size: 24px;
@@ -21,6 +31,11 @@
   line-height: 36px;
   margin-right: 100px;
   text-align: justify;
+}
+.editor-content p.left {
+  width: 50%;
+  display: inline-block;
+  margin-right: 0;
 }
 .editor-content ul.history {
   position: relative;

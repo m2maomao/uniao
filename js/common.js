@@ -14,6 +14,14 @@ $(function () {
                 navMain.removeClass('navMainScroll')
             }
         })
+    }else {
+        $(window).scroll(function(){
+            if($(window).scrollTop()>=70) {
+                navMain.addClass('navMainScroll')
+            }else {
+                navMain.removeClass('navMainScroll')
+            }
+        })
     }
     if(navSiderStatus) {
         $(window).scroll(function(){
