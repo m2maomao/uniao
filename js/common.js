@@ -98,6 +98,6 @@ $(function () {
             loop : true,
             autoplay:true,
             delay:1000
-        });
+        });  
     }
 })
