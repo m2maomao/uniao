@@ -14,6 +14,13 @@
   color: #0a0425;
   line-height: 80px;
 }
+.editor-content h4 a {
+  float: right;
+  font-size: 20px;
+  line-height: 80px;
+  color: #00c4f2;
+  text-decoration: none;
+}
 .editor-content p {
   width: 100%;
   font-size: 18px;
@@ -72,4 +79,195 @@
 .editor-content ul li span:first-child {
   color: #ea0a4c;
   font-weight: bold;
+}
+.toutiao {
+  margin-left: 60px;
+}
+.toutiao h1 {
+  font-size: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 40px;
+}
+.toutiao h1 a {
+  color: #333;
+  text-decoration: none;
+}
+.toutiao h1 a:hover {
+  color: #00c4f2;
+}
+.toutiao p {
+  font-size: 16px;
+  color: #ababab;
+  line-height: 50px;
+}
+.toutiao p span {
+  margin-left: 10px;
+}
+.toutiao dl {
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #ccc;
+}
+.toutiao dl dt {
+  width: 40%;
+  float: left;
+}
+.toutiao dl dt img {
+  width: 100%;
+}
+.toutiao dl dd {
+  width: 56%;
+  float: right;
+  line-height: 26px;
+}
+.toutiao dl dd a {
+  display: block;
+  color: #00c4f2;
+  line-height: 40px;
+  text-decoration: none;
+}
+.news-list {
+  margin-left: 60px;
+}
+.news-list li {
+  padding: 30px 0;
+  border-bottom: 1px dashed #ccc;
+}
+.news-list li:hover {
+  background: #f1f1f1;
+}
+.news-list li > a {
+  color: #333;
+  text-decoration: none;
+}
+.news-list li dl {
+  display: flex;
+}
+.news-list li dl dt {
+  width: 200px;
+  float: left;
+}
+.news-list li dl dt img {
+  width: 100%;
+}
+.news-list li dl dd {
+  padding: 10px 20px;
+}
+.news-list li dl dd h3 {
+  font-size: 20px;
+  line-height: 60px;
+}
+.news-list li dl dd h3 span {
+  color: #ea0a4c;
+  margin-right: 6px;
+}
+.news-list li dl dd p {
+  color: #999999;
+  font-size: 14px;
+}
+.news-list li dl dd p span {
+  margin-right: 10px;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#pages {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+.pagination > li {
+  display: inline;
+}
+.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 8px 18px;
+  margin-left: -1px;
+  line-height: 1.428571429;
+  color: #428bca;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  margin-left: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: #2a6496;
+  background-color: #eee;
+  border-color: #ddd;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  z-index: 2;
+  color: #fff;
+  cursor: default;
+  background-color: #151346;
+  border-color: #151346;
+}
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+  color: #999;
+  cursor: not-allowed;
+  background-color: #fff;
+  border-color: #ddd;
+}
+.pagination-lg > li > a,
+.pagination-lg > li > span {
+  padding: 10px 16px;
+  font-size: 18px;
+}
+.pagination-lg > li:first-child > a,
+.pagination-lg > li:first-child > span {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.pagination-lg > li:last-child > a,
+.pagination-lg > li:last-child > span {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.pagination-sm > li > a,
+.pagination-sm > li > span {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.pagination-sm > li:first-child > a,
+.pagination-sm > li:first-child > span {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.pagination-sm > li:last-child > a,
+.pagination-sm > li:last-child > span {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
