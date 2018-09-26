@@ -66,7 +66,6 @@
   }
   .editor-content .board ul li {
     float: left;
-    margin-right: 52px;
   }
   .editor-content .board ul li input[type="text"] {
     width: 130px;
@@ -170,8 +169,12 @@
   .editor-content .board ul li {
     display: block;
   }
+  .editor-content .board ul li:nth-child(1),
+  .editor-content .board ul li:nth-child(2),
+  .editor-content .board ul li:nth-child(3) {
+    margin-right: 36px;
+  }
   .editor-content .board ul li input[type="text"] {
-    width: 100%;
     background: #fff;
     border-radius: 6px;
     border: none;
@@ -186,13 +189,16 @@
   .editor-content .board button {
     padding: 14px 80px;
     color: #fff;
+    width: 240px;
     font-size: 20px;
-    width: 100%;
     background: #00c4f2;
     border: none;
-    margin-top: 30px;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 25px;
+    margin: 30px auto 0;
+    position: relative;
+    left: 50%;
+    margin-left: -120px;
   }
   .editor-content .new-box .img-wrap img {
     max-width: 380px;
@@ -283,6 +289,13 @@
   }
   .editor-content .board ul li {
     display: block;
+    width: 120px;
+    float: left;
+  }
+  .editor-content .board ul li:nth-child(1),
+  .editor-content .board ul li:nth-child(2),
+  .editor-content .board ul li:nth-child(3) {
+    margin-right: 16px;
   }
   .editor-content .board ul li input[type="text"] {
     width: 100%;
@@ -301,12 +314,15 @@
     padding: 14px 80px;
     color: #fff;
     font-size: 20px;
-    width: 100%;
+    width: 240px;
     background: #00c4f2;
     border: none;
     margin-top: 30px;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 25px;
+    position: relative;
+    left: 50%;
+    margin-left: -120px;
   }
   .editor-content .new-box .img-wrap img {
     max-width: 340px;
