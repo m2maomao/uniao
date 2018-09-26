@@ -72,7 +72,7 @@ $(function () {
         })
     }
     // 二维码显示
-    if($('.erweima').length>0){
+    if($('.erweima').length>0 && $(document).width()>768){
         $('.erweima').prev('a').hover(function(){
             $('.erweima').fadeIn()
         },function(){
@@ -96,7 +96,7 @@ $(function () {
                 dynamicBullets: true
             },
             loop : true,
-            autoplay:true,
+            autoplay:false,
             delay:1000
         });  
     }

@@ -753,6 +753,9 @@
     margin: 90px auto 0;
     overflow: hidden;
   }
+  #footer .wrap > ul {
+    padding-top: 10px;
+  }
   #footer .wrap > ul li {
     padding: 10px;
     line-height: 30px;
@@ -768,13 +771,13 @@
     overflow: hidden;
   }
   #footer .wrap .copyright-wrap ul li a {
-    font-size: 12px!important;
+    font-size: 11px!important;
   }
   #footer .wrap .copyright-wrap p {
     float: none;
     display: block;
     color: #747b81;
-    font-size: 12px!important;
+    font-size: 11px!important;
     margin-right: 0px;
     margin-top: 10px;
     text-align: center;
@@ -814,33 +817,45 @@
   .editor-content .board ul li {
     display: block;
   }
+  .editor-content .board ul li:nth-child(1),
+  .editor-content .board ul li:nth-child(3) {
+    width: 48%;
+    margin-right: 4%;
+  }
+  .editor-content .board ul li:nth-child(2),
+  .editor-content .board ul li:nth-child(4) {
+    width: 48%;
+    margin-right: 0;
+  }
   .editor-content .board ul li input[type="text"] {
     width: 100%;
     background: #fff;
     border-radius: 6px;
     border: none;
-    padding: 16px;
+    padding: 10px 16px;
     font-size: 16px;
     box-sizing: border-box;
   }
   .editor-content .board ul li.request input[type="text"] {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .editor-content .board button {
-    padding: 14px 80px;
+    padding: 6px 80px;
     color: #fff;
     font-size: 20px;
     width: 100%;
     background: #00c4f2;
     border: none;
-    margin-top: 30px;
+    margin-top: 10px;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 20px;
+    left: 0;
+    margin-left: 0;
   }
   .editor-content .board {
     background: #2454a3;
-    padding: 50px 20px;
+    padding: 30px 20px;
   }
   .editor-content .new-box .img-wrap img {
     width: 100%;
