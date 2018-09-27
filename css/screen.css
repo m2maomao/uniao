@@ -47,6 +47,10 @@
     overflow: hidden;
     padding-bottom: 40px;
   }
+  #footer .wrap .copyright-wrap ul {
+    float: left;
+    margin-left: -12px;
+  }
   .editor-content .case img {
     min-width: 400px;
   }
@@ -67,8 +71,8 @@
   .editor-content .board ul li {
     float: left;
   }
-  .editor-content .board ul li input[type="text"],
-  .editor-content .board ul li input[type="number"] {
+  .editor-content .board ul li input[type='text'],
+  .editor-content .board ul li input[type='number'] {
     width: 130px;
     background: #fff;
     border-radius: 6px;
@@ -76,7 +80,7 @@
     padding: 16px;
     font-size: 16px;
   }
-  .editor-content .board ul li.request input[type="text"] {
+  .editor-content .board ul li.request input[type='text'] {
     width: 100%;
     margin-top: 20px;
   }
@@ -147,6 +151,10 @@
     overflow: hidden;
     padding-bottom: 20px;
   }
+  #footer .wrap .copyright-wrap ul {
+    float: left;
+    margin-left: -12px;
+  }
   .editor-content .case img {
     min-width: 300px;
   }
@@ -175,8 +183,8 @@
   .editor-content .board ul li:nth-child(3) {
     margin-right: 36px;
   }
-  .editor-content .board ul li input[type="text"],
-  .editor-content .board ul li input[type="number"] {
+  .editor-content .board ul li input[type='text'],
+  .editor-content .board ul li input[type='number'] {
     background: #fff;
     border-radius: 6px;
     border: none;
@@ -184,7 +192,7 @@
     font-size: 16px;
     box-sizing: border-box;
   }
-  .editor-content .board ul li.request input[type="text"] {
+  .editor-content .board ul li.request input[type='text'] {
     width: 100%;
     margin-top: 20px;
   }
@@ -299,8 +307,8 @@
   .editor-content .board ul li:nth-child(3) {
     margin-right: 16px;
   }
-  .editor-content .board ul li input[type="text"],
-  .editor-content .board ul li input[type="number"] {
+  .editor-content .board ul li input[type='text'],
+  .editor-content .board ul li input[type='number'] {
     width: 100%;
     background: #fff;
     border-radius: 6px;
@@ -309,7 +317,7 @@
     font-size: 16px;
     box-sizing: border-box;
   }
-  .editor-content .board ul li.request input[type="text"] {
+  .editor-content .board ul li.request input[type='text'] {
     width: 100%;
     margin-top: 20px;
   }
@@ -453,12 +461,12 @@
     padding: 20px 0;
   }
   #footer .wrap .copyright-wrap ul li a {
-    font-size: 12px!important;
+    font-size: 12px !important;
   }
   #footer .wrap .copyright-wrap p {
     float: right;
     color: #747b81;
-    font-size: 12px!important;
+    font-size: 12px !important;
     margin-right: 20px;
   }
   .editor-content .case img {
@@ -484,8 +492,8 @@
   .editor-content .board ul li {
     display: block;
   }
-  .editor-content .board ul li input[type="text"],
-  .editor-content .board ul li input[type="number"] {
+  .editor-content .board ul li input[type='text'],
+  .editor-content .board ul li input[type='number'] {
     width: 100%;
     background: #fff;
     border-radius: 6px;
@@ -494,7 +502,7 @@
     font-size: 16px;
     box-sizing: border-box;
   }
-  .editor-content .board ul li.request input[type="text"] {
+  .editor-content .board ul li.request input[type='text'] {
     width: 100%;
     margin-top: 20px;
   }
@@ -652,7 +660,7 @@
   }
   #bottom .wrap > div h4 {
     font-size: 16px;
-    padding-bottom: 5px!important;
+    padding-bottom: 5px !important;
   }
   #bottom .wrap .poster p {
     font-size: 14px;
@@ -696,7 +704,7 @@
     display: inline-block;
   }
   .editor-content p {
-    width: 100%!important;
+    width: 100% !important;
     font-size: 14px;
     color: #222222;
     line-height: 24px;
@@ -710,7 +718,7 @@
     font-size: 18px;
   }
   .editor-content img {
-    margin-left: 0!important;
+    margin-left: 0 !important;
   }
   .editor-content ul.history li .item-content p {
     line-height: 24px;
@@ -776,13 +784,13 @@
     overflow: hidden;
   }
   #footer .wrap .copyright-wrap ul li a {
-    font-size: 11px!important;
+    font-size: 11px !important;
   }
   #footer .wrap .copyright-wrap p {
     float: none;
     display: block;
     color: #747b81;
-    font-size: 11px!important;
+    font-size: 11px !important;
     margin-right: 0px;
     margin-top: 10px;
     text-align: center;
@@ -832,8 +840,8 @@
     width: 48%;
     margin-right: 0;
   }
-  .editor-content .board ul li input[type="text"],
-  .editor-content .board ul li input[type="number"] {
+  .editor-content .board ul li input[type='text'],
+  .editor-content .board ul li input[type='number'] {
     width: 100%;
     background: #fff;
     border-radius: 6px;
@@ -842,7 +850,7 @@
     font-size: 16px;
     box-sizing: border-box;
   }
-  .editor-content .board ul li.request input[type="text"] {
+  .editor-content .board ul li.request input[type='text'] {
     width: 100%;
     margin-top: 0px;
   }
