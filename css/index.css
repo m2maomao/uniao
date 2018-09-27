@@ -70,7 +70,13 @@
   max-width: 100%;
 }
 .swiper-pagination {
-  width: 100px!important;
+  width: 100%!important;
+}
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  position: relative;
 }
 .swiper-pagination-bullet {
   width: 4px;

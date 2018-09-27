@@ -72,12 +72,14 @@ $(function () {
         })
     }
     // 二维码显示
-    if($('.erweima').length>0 && $(document).width()>768){
-        $('.erweima').prev('a').hover(function(){
+    if($('.erweima').length>0){
+        $('.erweima').prev('a').on('click',function(){
             $('.erweima').fadeIn()
-        },function(){
-            $('.erweima').fadeOut()
         });
+        $('.erweima h5').on('click',function(){
+            $('.erweima').fadeOut()
+        })
+
     }
     // 移动端主导航
     if($('#header .btn,#header-common .btn').length>0){
@@ -96,7 +98,7 @@ $(function () {
                 dynamicBullets: true
             },
             loop : true,
-            autoplay:false,
+            autoplay:true,
             delay:1000
         });  
     }

@@ -196,6 +196,7 @@ body .content-right div.anchor {
   text-indent: 10px;
 }
 #bottom .wrap > div ul .erweima h5 span {
+  cursor: pointer;
   display: block;
   position: absolute;
   right: 0;
