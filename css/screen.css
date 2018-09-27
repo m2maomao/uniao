@@ -67,7 +67,8 @@
   .editor-content .board ul li {
     float: left;
   }
-  .editor-content .board ul li input[type="text"] {
+  .editor-content .board ul li input[type="text"],
+  .editor-content .board ul li input[type="number"] {
     width: 130px;
     background: #fff;
     border-radius: 6px;
@@ -174,7 +175,8 @@
   .editor-content .board ul li:nth-child(3) {
     margin-right: 36px;
   }
-  .editor-content .board ul li input[type="text"] {
+  .editor-content .board ul li input[type="text"],
+  .editor-content .board ul li input[type="number"] {
     background: #fff;
     border-radius: 6px;
     border: none;
@@ -687,7 +689,7 @@
     padding-top: 20px;
   }
   .editor-content.pt50 p span:nth-child(1) {
-    width: 130px;
+    width: 100px;
     display: inline-block;
   }
   .editor-content.pt50 p span:nth-child(2) {
