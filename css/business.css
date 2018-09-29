@@ -33,8 +33,12 @@
   background: #e1eff4;
   flex-direction: row-reverse;
 }
+.editor-content .case dl dt {
+  float: left;
+}
 .editor-content .case dl dd {
   padding: 20px;
+  float: right;
 }
 .editor-content .case dl dd p {
   font-size: 12px;
