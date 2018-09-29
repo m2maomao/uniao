@@ -34,11 +34,16 @@
   flex-direction: row-reverse;
 }
 .editor-content .case dl dt {
-  float: left;
+  display: inline-block;
+  width: 35%;
+  overflow: hidden;
 }
 .editor-content .case dl dd {
   padding: 20px;
-  float: right;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 65%;
+  overflow: hidden;
 }
 .editor-content .case dl dd p {
   font-size: 12px;
