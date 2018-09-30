@@ -324,3 +324,8 @@ body .content-right div.anchor {
   right: 0;
   transition: all ease-in 0.2s;
 }
+.error {
+  border: 1px #f30 solid!important;
+  color: #f30;
+  box-sizing: border-box;
+}

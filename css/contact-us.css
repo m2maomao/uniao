@@ -35,6 +35,10 @@
 .editor-content .board ul li.request {
   width: 100%;
 }
+.editor-content .board ul li input {
+  border: 1px solid #fff;
+  box-sizing: border-box;
+}
 .editor-content .board ul li label {
   display: block;
   line-height: 40px;

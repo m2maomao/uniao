@@ -52,7 +52,7 @@
     margin-left: -12px;
   }
   .editor-content .case img {
-    min-width: 400px;
+    width: 100%;
   }
   .editor-content .case dl dd p {
     text-overflow: -o-ellipsis-lastline;
@@ -140,6 +140,7 @@
     width: 1170px;
     margin: 120px auto 0;
     overflow: hidden;
+    min-height: 580px;
   }
   #footer .wrap > ul li {
     padding: 10px;
@@ -156,7 +157,7 @@
     margin-left: -12px;
   }
   .editor-content .case img {
-    min-width: 300px;
+    width: 100%;
   }
   .editor-content .case dl dd p {
     text-overflow: -o-ellipsis-lastline;
@@ -264,6 +265,7 @@
   }
   body > .content {
     width: 990px;
+    min-height: 380px;
     margin: 150px auto 0;
     overflow: hidden;
   }
@@ -778,10 +780,12 @@
   #footer .wrap .copyright-wrap {
     overflow: hidden;
     padding: 20px 0;
+    text-align: center;
   }
   #footer .wrap .copyright-wrap ul {
     float: none;
     overflow: hidden;
+    display: inline-block;
   }
   #footer .wrap .copyright-wrap ul li a {
     font-size: 11px !important;

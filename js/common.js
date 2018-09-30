@@ -134,23 +134,138 @@ $(function() {
       delay: 1000
     })
   }
-  // 验证手机号
-  $('#submit').on('click', function() {
-    var val = $('#phone').val()
-    if (!isRealNum(val)) {
-      alert('请填写正确格式的电话号码')
+  // // 验证手机号
+  // $('#submit').on('click', function() {
+  //   var val = $('#phone').val()
+  //   if (!isRealNum(val)) {
+  //     $(this).next().html('请输入正确手机号')
+  //   }
+  // })
+  // //验证手机号方法
+  // function isRealNum(val) {
+  //   // isNaN()函数 把空串 空格 以及NUll 按照0来处理 所以先去除
+  //   if (val === '' || val == null) {
+  //     return false
+  //   }
+  //   if (!isNaN(val)) {
+  //     return true
+  //   } else {
+  //     return false
+  //   }
+  // }
+  // 表单验证 
+  function yanzhengForm(){
+    if( $(".board").length<=0){
+        return false;
     }
-  })
-  //验证手机号方法
-  function isRealNum(val) {
-    // isNaN()函数 把空串 空格 以及NUll 按照0来处理 所以先去除
-    if (val === '' || val == null) {
-      return false
+    var myform = $(".board form")[0];
+    if( !myform ){
+        return false;
     }
-    if (!isNaN(val)) {
-      return true
-    } else {
-      return false
-    }
+    var uname = myform["data[xingming]"];
+    var unameZZ = /(^[\u4e00-\u9fa5]{1,10}$)|(^[a-zA-Z\s]{2,20}$)/;
+        $(uname).on("invalid",function(){
+            uname.setCustomValidity("请填写此信息");
+        });
+        $(uname).on("input",function(){
+            uname.setCustomValidity("");
+        });
+
+    var dianhua = myform["data[lianxidianhua]"];
+    var dianhuaZZ = /(^1\d{10}$)|(^0\d{2,3}-?\d{7,8}$)/;  // 手机或者座机
+        $(dianhua).on("invalid",function(){
+            dianhua.setCustomValidity("请填写此信息");
+        });
+        $(dianhua).on("input",function(){
+            dianhua.setCustomValidity("");
+        });
+
+    var shengshi = myform["data[suoshushengshi]"];
+    var shengshiZZ = /(^[\u4e00-\u9fa5]{1,15}$)|(^[a-zA-Z-\s]{2,20}$)/;
+        $(shengshi).on("invalid",function(){
+            shengshi.setCustomValidity("请填写此信息");
+        });
+        $(shengshi).on("input",function(){
+            shengshi.setCustomValidity("");
+        });
+
+    var hangye = myform["data[suoshuxingye]"];
+    var hangyeZZ = /(^[\u4e00-\u9fa5]{1,10}$)|(^[a-zA-Z-\s]{2,20}$)/;
+        $(hangye).on("invalid",function(){
+            hangye.setCustomValidity("请填写此信息");
+        });
+        $(hangye).on("input",function(){
+            hangye.setCustomValidity("");
+        });
+
+    var xuqiu = myform["data[nidexuqiu]"];
+    var xuqiuZZ = /[a-zA-Z0-9_\u4e00-\u9fa5]+/;
+        $(xuqiu).on("invalid",function(){
+            xuqiu.setCustomValidity("请填写此信息");
+        });
+        $(xuqiu).on("input",function(){
+            xuqiu.setCustomValidity("");
+        });
+
+    $(myform).on("submit",function(e){
+      // 姓名
+      if( !$.trim(uname.value) || !unameZZ.test( $.trim(uname.value) )  ){
+          $(uname).addClass("error");
+          $(uname).next().html(" <i class=\"icon_tanhao\"></i>请输入正确的姓名");
+          return false;
+      }else{
+          $(uname).removeClass("error");
+          uname.value = $.trim(uname.value);
+          $(uname).next().html(" <i class=\"icon_tanhao\"></i> OK");
+      }
+      // 电话
+      if( !$.trim(dianhua.value) || !dianhuaZZ.test( $.trim(dianhua.value)) ){
+          $(dianhua).addClass("error");
+          $(dianhua).next().html(" <i class=\"icon_tanhao\"></i>请输入正确的电话");
+          return false;
+      }else{
+          $(dianhua).removeClass("error");
+          dianhua.value = $.trim(dianhua.value);
+          $(dianhua).next().html(" <i class=\"icon_tanhao\"></i> OK");
+      }
+      
+      // 行业
+      if( !$.trim(hangye.value) || !hangyeZZ.test($.trim(hangye.value) )){
+          $(hangye).addClass("error");
+          $(hangye).next().html(" <i class=\"icon_tanhao\"></i>请输入正确的行业");
+          return false;
+      }else{
+          $(hangye).removeClass("error");
+          hangye.value = $.trim(hangye.value);
+          $(hangye).next().html(" <i class=\"icon_tanhao\"></i> OK");
+      }
+
+      // 省市
+      if( !$.trim(shengshi.value) || !shengshiZZ.test($.trim(shengshi.value) )){
+          $(shengshi).addClass("error");
+          $(shengshi).next().html(" <i class=\"icon_tanhao\"></i>请输入正确的省市");
+          return false;
+      }else{
+          $(shengshi).removeClass("error");
+          shengshi.value = $.trim(shengshi.value);
+          $(shengshi).next().html(" <i class=\"icon_tanhao\"></i> OK");
+      }
+
+      
+
+      // 需求
+      if( !$.trim(xuqiu.value) || !xuqiuZZ.test($.trim(xuqiu.value)) ){
+          $(xuqiu).addClass("error");
+          $(xuqiu).next().html(" <i class=\"icon_tanhao\"></i>请输入您的需求");
+          return false;
+      }else{
+          $(xuqiu).removeClass("error");
+          $(xuqiu).next().html(" <i class=\"icon_tanhao\"></i> OK");
+      }
+      return true;
+    });
   }
+  $(document).ready(function(){
+      yanzhengForm();
+  });
 })

@@ -70,29 +70,31 @@
                 <a name="ywhz" class="anchor"></a>
                 <h4>业务合作</h4>
                 <div class="board">
-                    <ul>
-                        <li>
-                            <input type="text" placeholder="姓名">
-                            <label for=""><i></i>姓名必填</label>
-                        </li>
-                        <li>
-                            <input type="text" placeholder="联系电话" id="phone">
-                            <label for=""><i></i>电话必填</label>
-                        </li>
-                        <li>
-                            <input type="text" placeholder="所属行业">
-                            <label for=""><i></i>行业必填</label>
-                        </li>
-                        <li>
-                            <input type="text" placeholder="所属省份">
-                            <label for=""><i></i>省份必填</label>
-                        </li>
-                        <li class="request">
-                            <input type="text">
-                            <label for=""><i></i>请提出您的需求</label>
-                        </li>
-                    </ul>
-                    <button id="submit">确认提交</button>
+                    <form action="#">
+                        <ul>
+                            <li>
+                                <input type="text" placeholder="姓名" required name="data[xingming]">
+                                <label for=""><i></i>姓名必填</label>
+                            </li>
+                            <li>
+                                <input type="text" placeholder="联系电话" id="phone" required name="data[lianxidianhua]">
+                                <label for=""><i></i>电话必填</label>
+                            </li>
+                            <li>
+                                <input type="text" placeholder="所属行业" required name="data[suoshuxingye]">
+                                <label for=""><i></i>行业必填</label>
+                            </li>
+                            <li>
+                                <input type="text" placeholder="所属省份" required name="data[suoshushengshi]">
+                                <label for=""><i></i>省份必填</label>
+                            </li>
+                            <li class="request">
+                                <input type="text" required name="data[nidexuqiu]">
+                                <label for=""><i></i>请提出您的需求</label>
+                            </li>
+                        </ul>
+                        <button id="submit">确认提交</button>
+                    </form>
                 </div>
                 <!-- <div class="success">
                     <i></i>

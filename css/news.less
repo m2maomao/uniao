@@ -66,9 +66,18 @@
         li{
             font-size: 20px;
             line-height: 50px;
+            *{display: inline;}
             a{
                 color: #333333;
                 text-decoration: none;
+                h6{
+                    float: left;
+                    width: 76%;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;
+                }
             }
             span:last-child{
                 float: right;
@@ -78,6 +87,7 @@
             span:first-child{
                 color: #ea0a4c;
                 font-weight: bold;
+                float: left;
             }
         }
     }
@@ -143,17 +153,23 @@
         dl{
             display: flex;
             dt{
-                width: 200px;
+                width: 30%;
                 float: left;
                 img{
                     width: 100%;
                 }
             }
             dd{
+                width: 70%;
+                box-sizing: border-box;
                 padding: 10px 20px;
                 h3{
                     font-size: 20px;
                     line-height: 60px;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;
                     span{
                         color: #ea0a4c;
                         margin-right: 6px;
@@ -162,6 +178,7 @@
                 p{
                     color: #999999;
                     font-size: 14px;
+                    line-height: 40px;
                     span{
                         margin-right: 10px;
                     }

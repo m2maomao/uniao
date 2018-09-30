@@ -67,9 +67,20 @@
   font-size: 20px;
   line-height: 50px;
 }
+.editor-content ul li * {
+  display: inline;
+}
 .editor-content ul li a {
   color: #333333;
   text-decoration: none;
+}
+.editor-content ul li a h6 {
+  float: left;
+  width: 76%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
 }
 .editor-content ul li span:last-child {
   float: right;
@@ -79,6 +90,7 @@
 .editor-content ul li span:first-child {
   color: #ea0a4c;
   font-weight: bold;
+  float: left;
 }
 .toutiao {
   margin-left: 60px;
@@ -144,18 +156,24 @@
   display: flex;
 }
 .news-list li dl dt {
-  width: 200px;
+  width: 30%;
   float: left;
 }
 .news-list li dl dt img {
   width: 100%;
 }
 .news-list li dl dd {
+  width: 70%;
+  box-sizing: border-box;
   padding: 10px 20px;
 }
 .news-list li dl dd h3 {
   font-size: 20px;
   line-height: 60px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
 }
 .news-list li dl dd h3 span {
   color: #ea0a4c;
@@ -164,6 +182,7 @@
 .news-list li dl dd p {
   color: #999999;
   font-size: 14px;
+  line-height: 40px;
 }
 .news-list li dl dd p span {
   margin-right: 10px;
