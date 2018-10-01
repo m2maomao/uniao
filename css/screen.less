@@ -188,6 +188,8 @@
   }
   .editor-content .board ul li {
     display: block;
+    float: left;
+    width: 130px;
   }
   .editor-content .board ul li:nth-child(1),
   .editor-content .board ul li:nth-child(2),
@@ -202,6 +204,8 @@
     padding: 16px;
     font-size: 16px;
     box-sizing: border-box;
+    display: block;
+    width: 100%;
   }
   .editor-content .board ul li.request input[type='text'] {
     width: 100%;
@@ -260,7 +264,7 @@
     min-width: 140px;
   }
   #bottom .wrap .logo {
-    max-width: 120px;
+    max-width: 220px;
     img {
       max-width: 100%;
     }
@@ -431,14 +435,14 @@
   }
   #bottom .wrap > div {
     float: left;
-    min-width: 140px;
+    min-width: 120px;
     &:first-child {
       margin-left: 20px;
     }
   }
   #bottom .wrap .logo {
-    display: none;
-    max-width: 120px;
+    max-width: 180px;
+    margin-right: 40px;
     img {
       max-width: 100%;
     }
@@ -502,6 +506,10 @@
     -webkit-box-orient: vertical;
   }
   // contact-us
+  .editor-content .board ul li:nth-child(1), .editor-content .board ul li:nth-child(2), .editor-content .board ul li:nth-child(3) {
+    margin-right: 4%;
+}
+
   .editor-content .net ul li {
     width: 50%;
     float: left;
@@ -513,6 +521,8 @@
   }
   .editor-content .board ul li {
     display: block;
+    width: 22%;
+    float: left;
   }
   .editor-content .board ul li input[type='text'],
   .editor-content .board ul li input[type='number'] {
@@ -532,12 +542,12 @@
     padding: 14px 80px;
     color: #fff;
     font-size: 20px;
-    width: 100%;
+    width: 240px;
     background: #00c4f2;
     border: none;
     margin-top: 30px;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 25px;
   }
   // news
   .editor-content .new-box .img-wrap img {
@@ -684,7 +694,7 @@
   }
   #bottom .wrap > div ul .erweima {
     display: none;
-    left: -20px;
+    left: -25px;
     top: 30px;
   }
   #bottom .wrap > div h4 {
@@ -742,6 +752,9 @@
     margin-right: 100px;
     text-align: justify;
     margin-top: 4px;
+  }
+  .editor-content span.right{
+    width: 100%;
   }
   .editor-content .success p {
     color: #fff;
@@ -954,6 +967,7 @@
   .editor-content .uniao-store li img {
     max-width: 100px;
     min-width: 100px;
+    display: inline;
   }
   .toutiao {
     margin-left: 0px;
@@ -999,5 +1013,22 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+}
+
+// 375
+@media (max-width: 375px) {
+  #bottom .wrap > div ul .erweima {
+    display: none;
+    left: -50px;
+    top: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  #bottom .wrap > div ul .erweima {
+    display: none;
+    left: 20px;
+    top: 30px;
   }
 }

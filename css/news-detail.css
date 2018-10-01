@@ -14,6 +14,13 @@
   color: #0a0425;
   line-height: 80px;
 }
+.editor-content h4 a {
+  color: #0a0425;
+  text-decoration: nonoe;
+}
+.editor-content h4 a:hover {
+  text-decoration: underline;
+}
 .editor-content p {
   width: 100%;
   font-size: 18px;
@@ -54,6 +61,5 @@
   padding: 30px 0;
 }
 .editor-content p img {
-  display: table-cell;
   margin: 20px auto;
 }

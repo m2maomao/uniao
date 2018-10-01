@@ -33,9 +33,13 @@
   text-align: justify;
 }
 .editor-content p.left {
-  width: 50%;
+  width: 58%;
   display: inline-block;
   margin-right: 0;
+}
+.editor-content span.right {
+  float: right;
+  width: 42%;
 }
 .editor-content ul.history {
   position: relative;

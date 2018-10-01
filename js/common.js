@@ -8,7 +8,7 @@ $(function() {
   var windowsWidthStatus = $(document).width() > 768
   if (navMainStatus && windowsWidthStatus) {
     $(window).scroll(function() {
-      if ($(window).scrollTop() >= 200) {
+      if ($(window).scrollTop() >= 70) {
         navMain.addClass('navMainScroll')
       } else {
         navMain.removeClass('navMainScroll')
@@ -127,7 +127,8 @@ $(function() {
     var swiper = new Swiper('.swiper-container', {
       pagination: {
         el: '.swiper-pagination',
-        dynamicBullets: true
+        dynamicBullets: true,
+        clickable: true
       },
       loop: true,
       autoplay: true,

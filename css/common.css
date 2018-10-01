@@ -218,11 +218,14 @@ body .content-right div.anchor {
 #bottom .wrap .poster h4 {
   padding-bottom: 10px;
 }
-#bottom .wrap .poster p {
+#bottom .wrap .poster p,
+#bottom .wrap .poster a {
   font-size: 18px;
   font-weight: bold;
   color: #747b81;
   margin-bottom: 20px;
+  text-decoration: none;
+  display: block;
 }
 #bottom .wrap .logo {
   float: right;

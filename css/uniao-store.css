@@ -14,6 +14,13 @@
   color: #0a0425;
   line-height: 80px;
 }
+.editor-content h4 a {
+  color: #0a0425;
+  text-decoration: none;
+}
+.editor-content h4 a:hover {
+  text-decoration: underline;
+}
 .editor-content p {
   width: 100%;
   font-size: 18px;
