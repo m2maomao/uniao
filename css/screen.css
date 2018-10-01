@@ -538,6 +538,17 @@
     height: 34px;
   }
 }
+@media (max-width: 887px) {
+  #bottom .wrap .logo {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-top: -10px;
+    min-height: 50px;
+    margin-right: 0;
+  }
+}
 @media (max-width: 768px) {
   img.wap {
     display: block;
@@ -689,7 +700,7 @@
   body > .content > .nav {
     width: 130px;
     float: left;
-    display: none;
+    display: none!important;
   }
   body > .content > .nav li a {
     font-size: 12px;

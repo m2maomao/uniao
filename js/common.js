@@ -270,7 +270,21 @@ $(function() {
       yanzhengForm();
   });
   $(document).ready(function(){
-    if($(window).height() < 700 && $('.content > .nav').length>0) {
+    var a = window.navigator.userAgent;
+    if($(window).height() < 700 && $('.content > .nav').length>0 && a.indexOf('WindowsWechat')==-1) {
+      $(window).scroll(function() {
+        if ($(document).scrollTop() +700-$(window).height() >= $(document).height() - $(window).height()) {
+          $('.content > .nav').hide()
+        } else {
+          $('.content > .nav').show()
+        }
+
+      })
+    }
+  })
+  $(window).on('resize',function(){
+    var a = window.navigator.userAgent;
+    if($(window).height() < 700 && $('.content > .nav').length>0 && a.indexOf('WindowsWechat')==-1) {
       $(window).scroll(function() {
         if ($(document).scrollTop() +700-$(window).height() >= $(document).height() - $(window).height()) {
           $('.content > .nav').hide()
