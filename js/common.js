@@ -269,4 +269,16 @@ $(function() {
   $(document).ready(function(){
       yanzhengForm();
   });
+  $(document).ready(function(){
+    if($(window).height() < 700 && $('.content > .nav').length>0) {
+      $(window).scroll(function() {
+        if ($(document).scrollTop() +700-$(window).height() >= $(document).height() - $(window).height()) {
+          $('.content > .nav').hide()
+        } else {
+          $('.content > .nav').show()
+        }
+
+      })
+    }
+  })
 })
